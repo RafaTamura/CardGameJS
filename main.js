@@ -6,8 +6,16 @@ import './src/components/styles/generic/reset.css';
 import './src/components/styles/elements/base.css';
 
 const $root = document.querySelector("#root");
+const $htmlBoardGame = BoardGame();
 const $htmlPlayer = Player1();
-const $htmlBoardGame = BoardGame(6);
 
-$root.insertAdjacentHTML("beforeend", $htmlPlayer);
-$root.insertAdjacentHTML("beforeend", $htmlBoardGame);
+$root.insertAdjacentHTML("beforeend",
+`
+${Player1("Player 1")}
+${Player1("Player 2")}
+${BoardGame(6)},
+
+`
+
+
+);

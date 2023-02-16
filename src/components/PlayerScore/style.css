@@ -1,3 +1,4 @@
-.player{
-    color:#fff;  
+.playerName{
+    color: var(--color-floral-white);
+    font-size: 1rem;
 }
