@@ -1,16 +1,16 @@
 import "./style.css"
 
-function Points(){
+function Points(points = 0){
     return /*html*/ `
-    <div class="points">
-        <div class="points-mark">
-        </div>
-        <div class="points-mark2">
-        </div>
-        <div class="points-mark3">
-        </div>
+    <ol data-points="${points}">
+        <li class="points-mark">
+        </li>
+        <li class="points-mark2">
+        </li>
+        <li class="points-mark3">
+        </li>
     
-    </div>
+    </ol>
     `
 
 }
