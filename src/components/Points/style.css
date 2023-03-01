@@ -1,40 +1,27 @@
-.points{
-    border: solid 1px var(--color-fiery-rose);
+.score{
+    border: solid 2px var(--color-fiery-rose);
     width: 50px;
-    height: 16px;
+    height: 20px;
     box-sizing: border-box;
-    display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-auto-rows: 100px;
+    display: flex;
+    gap: 1px;
+    background-color: var(--color-floral-white);
+    padding: 1px;
 }
-.points-mark{
-    border:solid 0.5px var(--color-floral-white);
-    width: 14px;
-    height: 14px;
+.pointer-a0, .pointer-b0, .pointer-c0 {
+    width: 33%;
     background-color: var(--color-old-silver);
-    box-sizing: border-box;
-    z-index: 1;
-    
 }
-.points-mark2{
-    border:solid 0.5px var(--color-floral-white);
-    width: 14px;
-    height: 14px;
+.pointer-a1, .pointer-b1, .pointer-c1, .pointer-a2, .pointer-b3, .pointer-a3{
+    background-color: var(--color-mantis);
+    width: 33%;
+
+}
+.pointer-b2, .pointer-c2{
+    width: 33%;
     background-color: var(--color-old-silver);
-    box-sizing: border-box;
-    z-index: 2;
-
-
-    
-   
- }
-.points-mark3{
-    border:solid 0.5px var(--color-floral-white);
-    width: 14px;
-    height: 14px;
+}
+.pointer-c3 {
+    width: 33%;
     background-color: var(--color-old-silver);
-    box-sizing: border-box;
-    z-index: 3;
-
-    
 }

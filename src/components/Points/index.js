@@ -2,12 +2,12 @@ import "./style.css"
 
 function Points(points = 0){
     return /*html*/ `
-    <ol data-points="${points}">
-        <li class="points-mark">
+    <ol class="score">
+        <li class="pointer-a${points}">
         </li>
-        <li class="points-mark2">
+        <li class="pointer-b${points}">
         </li>
-        <li class="points-mark3">
+        <li class="pointer-c${points}">
         </li>
     
     </ol>
