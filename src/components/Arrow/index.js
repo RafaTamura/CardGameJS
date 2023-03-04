@@ -1,6 +1,8 @@
-function Arrow(){
+import "./style.css"
+
+function Arrow(currentPlayer=1){
 return `
-<img src="/src/components/images/IconArrowDown.png" >
+<img class="arrow" data-currentPlayer="${currentPlayer}" src="/src/components/images/IconArrowDown.png" >
 `
 
 }
