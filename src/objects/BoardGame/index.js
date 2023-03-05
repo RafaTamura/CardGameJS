@@ -1,14 +1,16 @@
 import "./style.css";
 import CardFrontBack from "../../components/CardFrontBack";
+import cards from "./data.js"
 
 function BoardGame(amountCards) {
-  const $htmlCardFrontBack = CardFrontBack();
-  const $htmlContent = $htmlCardFrontBack.repeat(amountCards);
+
+const $htmlcardsList = cards.map((card) => CardFrontBack(card.icon , card.altIcon) );
+const $htmlcard =  $htmlcardsList.join('');
 
   return /*html*/ `
     <section class="board-game">
-      ${$htmlContent}
-    </section>
+      ${$htmlcard}
+          </section>
   `;
 }
 
